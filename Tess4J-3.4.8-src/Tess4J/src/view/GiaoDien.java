@@ -159,8 +159,10 @@ public class GiaoDien extends javax.swing.JFrame {
             File imgFile = fileChooser.getSelectedFile();
             ImageIcon imgIcon = new ImageIcon(imgFile.getAbsolutePath());
             
-            
+            String tmp;
             lbImage.setIcon(imgIcon);
+            tmp = imgFile.getPath();
+            txtImageFile.setText(tmp);
             
         }
         
